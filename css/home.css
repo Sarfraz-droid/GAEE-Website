@@ -1,0 +1,162 @@
+body {
+    font-family: 'Assistant', sans-serif;
+    background-image: url('/images/dot-grid.png');
+}
+
+.main__outer {
+    display: flex;
+}
+
+.home__main {
+    margin-left: 4%;
+    font-size: 1.5rem;
+    margin-top: 4%;
+    line-height: 2;
+    width: 50%;
+}
+
+.main__heading {
+    font-size: 3rem;
+    color: #D4861D;
+    font-weight: 800;
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.096));
+}
+
+.main__college {
+    font-weight: 100;
+}
+
+.main_img {
+    width: 20%;
+    margin-left: 15%;
+    border-radius: 50px;
+    transform: scale(1);
+    transition: transform 0.3s;
+}
+
+.main_img:hover {
+    transform: scale(1.2);
+}
+
+.main__handles {
+    margin-top: 10%;
+    font-size: 2rem;
+}
+
+.main__handleicon {
+    margin-left: 5px;
+    margin-right: 5px;
+    transform: scale(1);
+    transition: transform 0.3s, color 0.3s;
+}
+
+.main__handleicon:hover {
+    transform: scale(1.3);
+    color: #4386B0;
+}
+
+.main__handles a {
+    color: Black !important;
+}
+
+.main__arrowdown {
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    font-size: 2rem;
+    animation: arrowdown infinite 1.5s;
+}
+
+@keyframes arrowdown {
+    0% {
+        bottom: 10%;
+    }
+    50% {
+        bottom: 5%;
+    }
+    0% {
+        bottom: 10%;
+    }
+}
+
+.info__outer {
+    padding: 5% 5%;
+    background-color: white;
+}
+
+.info__c1 {
+    width: 100%;
+}
+
+.info__heading {
+    padding: 0% 10%;
+    text-align: center;
+    font-weight: 300;
+    font-size: 1.6rem;
+}
+
+.info_data {
+    padding: 0% 20%;
+    text-align: center;
+    font-weight: 300;
+    margin-top: 5%;
+    font-size: 1.2rem;
+}
+
+.info_line {
+    margin: 5% 20%;
+}
+
+.blog {
+    text-align: center;
+}
+
+.blog__heading {
+    font-weight: 200;
+}
+
+.blog__carousel {
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.card {
+    border: none;
+    padding: 5%;
+    width: 100%;
+    font-size: 1rem;
+    border-radius: 25px;
+}
+
+.splide__list {
+    margin-left: 10%!important;
+    margin-right: 10%!important;
+}
+
+.splide__slide {
+    text-align: center;
+}
+
+.card-title {
+    margin-top: 6%;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.card-link {
+    color: rgb(51, 51, 51);
+    text-decoration: none;
+    font-style: italic;
+}
+
+.card-img-top {
+    border-radius: 25px;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.footer {
+    margin-top: 10%;
+}

@@ -1,0 +1,95 @@
+body.offcanvas-active {
+    overflow: hidden;
+}
+
+.offcanvas-header {
+    display: none;
+}
+
+.screen-darken {
+    height: 100%;
+    width: 0%;
+    z-index: 30;
+    position: fixed;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    visibility: hidden;
+    background-color: rgba(34, 34, 34, 0.6);
+    transition: opacity .2s linear, visibility 0.2s, width 2s ease-in;
+}
+
+.screen-darken.active {
+    z-index: 10;
+    transition: opacity .3s ease, width 0s;
+    opacity: 1;
+    width: 100%;
+    visibility: visible;
+}
+
+.nav-link {
+    color: black!important;
+}
+
+.nav__btn {
+    font-size: 1.1rem!important;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+    background: white;
+    color: black!important;
+    border-radius: 15px;
+}
+
+.nav__btn:hover {
+    color: #4386B0 !important;
+}
+
+.nav__bg {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    opacity: 0.9;
+    mask-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+
+.navbar-brand {
+    background-color: transparent;
+}
+
+.nav__logo {
+    width: 200px;
+    object-fit: cover;
+}
+
+
+/* ============ mobile view ============ */
+
+@media all and (max-width: 991px) {
+    .offcanvas-header {
+        display: block;
+    }
+    .mobile-offcanvas {
+        visibility: hidden;
+        transform: translateX(100%);
+        border-radius: 0;
+        display: block;
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100%;
+        z-index: 1200;
+        width: 80%;
+        overflow-y: hidden;
+        overflow-x: hidden;
+        transition: visibility .3s ease-in-out, transform .3s ease-in-out;
+    }
+    .mobile-offcanvas.show {
+        visibility: visible;
+        transform: translateX(0);
+    }
+    .mobile-offcanvas .container,
+    .mobile-offcanvas .container-fluid {
+        display: block;
+    }
+}
