@@ -16,33 +16,33 @@ body.offcanvas-active {
     opacity: 0;
     visibility: hidden;
     background-color: rgba(34, 34, 34, 0.6);
-    transition: opacity .2s linear, visibility 0.2s, width 2s ease-in;
+    transition: opacity 0.2s linear, visibility 0.2s, width 2s ease-in;
 }
 
 .screen-darken.active {
     z-index: 10;
-    transition: opacity .3s ease, width 0s;
+    transition: opacity 0.3s ease, width 0s;
     opacity: 1;
     width: 100%;
     visibility: visible;
 }
 
 .nav-link {
-    color: black!important;
+    color: black !important;
 }
 
 .nav__btn {
-    font-size: 1.1rem!important;
+    font-size: 1.1rem !important;
     margin-left: 10px;
     margin-right: 10px;
     padding: 10px;
     background: white;
-    color: black!important;
+    color: black !important;
     border-radius: 15px;
 }
 
 .nav__btn:hover {
-    color: #4386B0 !important;
+    color: #4386b0 !important;
 }
 
 .nav__bg {
@@ -62,6 +62,51 @@ body.offcanvas-active {
     object-fit: cover;
 }
 
+.navbar__btn {
+    background-color: transparent;
+    border: none;
+    font-size: 1rem;
+    transform: scale(1);
+    transition: transform 0.3s;
+}
+
+.navbar__btn:hover {
+    transform: scale(1.5);
+}
+
+.btn-close:focus,
+.btn-close:hover {
+    outline: none !important;
+    border: none !important;
+}
+
+.btn-close {
+    outline: none !important;
+    border: none !important;
+}
+
+.btn:hover,
+.btn:focus {
+    outline: none;
+    text-decoration: none;
+}
+
+.btn {
+    outline: none;
+    text-decoration: none;
+}
+
+.nav__close {
+    border: none;
+    background: transparent;
+    transform: scale(1);
+    transition: transform 0.3s;
+}
+
+.nav__close:hover {
+    transform: scale(1.5);
+}
+
 
 /* ============ mobile view ============ */
 
@@ -70,6 +115,7 @@ body.offcanvas-active {
         display: block;
     }
     .mobile-offcanvas {
+        background-color: white;
         visibility: hidden;
         transform: translateX(100%);
         border-radius: 0;
@@ -91,5 +137,16 @@ body.offcanvas-active {
     .mobile-offcanvas .container,
     .mobile-offcanvas .container-fluid {
         display: block;
+    }
+    .container,
+    .container-sm {
+        max-width: 100% !important;
+    }
+    .nav__logo {
+        width: 100px;
+        object-fit: cover;
+    }
+    .nav__btn {
+        background-color: transparent;
     }
 }

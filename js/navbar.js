@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 
-    document.querySelectorAll('.btn-close').forEach(function(everybutton) {
+    document.querySelectorAll('.nav__close').forEach(function(everybutton) {
 
         everybutton.addEventListener('click', function(e) {
             e.preventDefault();
@@ -43,3 +43,18 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
 });
+
+
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+
+    var currentScrollpos = window.pageYOffset;
+    if (prevScrollpos > currentScrollpos) {
+        document.getElementById("navbar").style.marginTop = "0";
+    } else {
+        document.getElementById("navbar").style.marginTop = "-100%";
+    }
+
+    prevScrollpos = currentScrollpos;
+
+}
