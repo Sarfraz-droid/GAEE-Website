@@ -45,16 +45,16 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
+// var prevScrollpos = window.pageYOffset;
+// window.onscroll = function() {
 
-    var currentScrollpos = window.pageYOffset;
-    if (prevScrollpos > currentScrollpos) {
-        document.getElementById("navbar").style.marginTop = "0";
-    } else {
-        document.getElementById("navbar").style.marginTop = "-100%";
-    }
+//     var currentScrollpos = window.pageYOffset;
+//     if (prevScrollpos > currentScrollpos) {
+//         document.getElementById("navbar").style.marginTop = "0";
+//     } else {
+//         document.getElementById("navbar")
+//     }
 
-    prevScrollpos = currentScrollpos;
+//     prevScrollpos = currentScrollpos;
 
-}
+// }

@@ -1,6 +1,7 @@
 body {
     font-family: 'Assistant', sans-serif;
     background-image: url('/images/dot-grid.png');
+    overflow-x: hidden;
 }
 
 .main__outer {
@@ -40,7 +41,7 @@ body {
 }
 
 .main__handles {
-    margin-top: 10%;
+    margin-top: 2%;
     font-size: 2rem;
 }
 
@@ -53,6 +54,17 @@ body {
 
 .main__handleicon:hover {
     transform: scale(1.3);
+    color: #4386B0;
+}
+
+.main__entranceresources {
+    margin-top: 2%;
+    font-size: 1.2rem;
+    font-style: italic;
+    transition: color 0.1s;
+}
+
+.main__entranceresources:hover {
     color: #4386B0;
 }
 
@@ -185,7 +197,7 @@ body {
         font-size: 1rem;
     }
     .info__outer {
-        margin-top: 49%;
+        margin-top: 30%;
     }
     .info__heading {
         padding: 0% 1%;

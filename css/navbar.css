@@ -57,6 +57,11 @@ body.offcanvas-active {
     background-color: transparent;
 }
 
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+}
+
 .nav__logo {
     width: 200px;
     object-fit: cover;
@@ -108,6 +113,29 @@ body.offcanvas-active {
 }
 
 
+/* NAVBAR */
+
+::-webkit-scrollbar {
+    width: 13px;
+    height: 13px;
+}
+
+ ::-webkit-scrollbar-thumb {
+    background: #D4861C;
+    border-radius: 10px;
+}
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: #D4861C;
+}
+
+ ::-webkit-scrollbar-track {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: inset 16px 5px 12px #f0f0f0;
+}
+
+
 /* ============ mobile view ============ */
 
 @media all and (max-width: 991px) {
@@ -148,5 +176,8 @@ body.offcanvas-active {
     }
     .nav__btn {
         background-color: transparent;
+    }
+     ::-webkit-scrollbar {
+        display: none;
     }
 }

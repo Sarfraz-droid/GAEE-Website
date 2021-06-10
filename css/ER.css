@@ -1,0 +1,36 @@
+body {
+    font-family: 'Assistant', sans-serif;
+    background-image: url('/images/dot-grid.png');
+}
+
+.ER {
+    text-align: center;
+}
+
+.ER__heading {
+    font-weight: 100;
+}
+
+.footer {
+    margin-top: 10%;
+}
+
+.footer_logo {
+    width: 60%;
+}
+
+.footer__desc {
+    font-weight: 400;
+}
+
+@media all and (max-width: 991px) {
+    .home__main {
+        text-align: center;
+        width: 100%;
+    }
+    html,
+    body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+}

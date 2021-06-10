@@ -1,0 +1,150 @@
+body {
+    font-family: 'Assistant', sans-serif;
+    background-image: url('/images/dot-grid.png');
+}
+
+.blog {
+    text-align: center;
+}
+
+.blog__heading {
+    font-weight: 200;
+}
+
+.blog_show {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.card {
+    border: none;
+    padding: 1%;
+    width: 100%;
+    font-size: 1rem;
+    border-radius: 25px;
+}
+
+.card-body {
+    display: flex;
+}
+
+.card__info {
+    margin-left: 5%;
+    padding: 1%;
+    text-align: left;
+}
+
+.card-title {
+    margin-top: 3%;
+    font-size: 1.6rem;
+    font-weight: 800;
+}
+
+.card-link {
+    margin-left: 2%;
+    color: rgb(51, 51, 51);
+    text-decoration: none;
+    font-style: italic;
+}
+
+.card-img-top {
+    border-radius: 25px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card__date {
+    margin-top: 5%;
+}
+
+.col__categoryouter {
+    padding-left: 6%;
+    text-align: left;
+}
+
+.blog__categorytext {
+    margin-left: 3%;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.blog__categories {
+    position: sticky;
+}
+
+.blog__categories ul {
+    margin: 0%;
+    padding-left: 0rem;
+}
+
+.blog__categories li {
+    margin: 5% 0%;
+    list-style: none;
+}
+
+.blog__item {
+    text-decoration: none;
+    font-style: 1.5rem;
+    color: black;
+}
+
+.blog__item:hover {
+    color: #4386B0;
+}
+
+.footer {
+    margin-top: 10%;
+}
+
+.footer_logo {
+    width: 60%;
+}
+
+.footer__desc {
+    font-weight: 400;
+}
+
+@media all and (max-width: 991px) {
+    .home__main {
+        text-align: center;
+        width: 100%;
+    }
+    .blog {
+        margin-top: 3%;
+    }
+    .blog__heading {
+        font-weight: 100;
+        font-size: 3rem;
+    }
+    .main__arrowdown {
+        left: 46%;
+    }
+    .card-body {
+        display: block;
+    }
+    .card__info {
+        margin-left: 0%;
+        text-align: center;
+    }
+    .card-img-top {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+    }
+    .blog__carousel {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    html,
+    body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    .main__outer {
+        margin-top: 7%;
+    }
+    .blog_show {
+        margin: 0%;
+    }
+}
