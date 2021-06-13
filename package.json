@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "@glidejs/glide": "^3.4.1"
+    "@glidejs/glide": "^3.4.1",
+    "hover.css": "^2.3.2"
   }
 }

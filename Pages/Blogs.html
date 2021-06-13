@@ -64,25 +64,39 @@
     <div class="blog " data-aos="fade-left ">
         <h1 class="blog__heading ">BLOGS</h1>
         <div class="row blog_show ">
-            <div class="col-lg-7 ">
+            <div class="col-lg-7 blog__showsection">
+                <h5 class="text-start ms-3 fs-3 fw-bolder mt-3 mb-3" id="entrepreneurship">Entrepreneurship</h5>
                 <div class="card ">
                     <div class="card-body ">
                         <img class="card-img-top " src="https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fspecials-images.forbesimg.com%2Fdam%2Fimageserve%2F841184530%2F960x0.jpg%3Ffit%3Dscale " alt=" " srcset=" ">
                         <div class="card__info ">
                             <h5 class="card-title ">ENTREPRENEURIAL TERMS</h5>
                             <p class="card-text ">Acqui-hire – Acqui-hire is the combination of the words “acquisition” and “hiring” and is defined as...</p>
-                            <a href="# " class="card-link ">Checkout The Whole Blog</a>
+                            <a href="/Pages/Blogs/ENTREPRENEURIALTERMS.html" class="card-link ">Checkout The Whole Blog</a>
                             <p class="card__date ">June 7, 2021</p>
                         </div>
                     </div>
                 </div>
                 <div class="card ">
                     <div class="card-body ">
+                        <img class="card-img-top " src="https://gaeejamia.files.wordpress.com/2021/05/intrrnational-tea-day-2-1.png?w=447 " alt=" " srcset=" ">
+                        <div class="card__info ">
+                            <h5 class="card-title ">International Tea Day</h5>
+                            <p class="card-text ">We gave Englishmen the ‘Kohinoor’, and they gave us ‘Tea’. The day is celebrated to bring out the global...</p>
+                            <a href="/Pages/Blogs/ITD.html" class="card-link ">Checkout The Whole Blog</a>
+                            <p class="card__date ">May 21, 2021</p>
+                        </div>
+                    </div>
+                </div>
+                <h5 class="text-start ms-3 fs-3 fw-bolder mt-3 mb-3" id="economics">Economics</h5>
+
+                <div class="card ">
+                    <div class="card-body ">
                         <img class="card-img-top " src="https://gaeejamia.files.wordpress.com/2021/06/snsfsf-5.jpg?w=768 " alt=" " srcset=" ">
                         <div class="card__info ">
                             <h5 class="card-title ">Child Wage Penalty</h5>
                             <p class="card-text ">Did you know that women with children tend to earn lower wages than women without children?....</p>
-                            <a href="# " class="card-link ">Checkout The Whole Blog</a>
+                            <a href="/Pages/Blogs/CWP.html" class="card-link ">Checkout The Whole Blog</a>
                             <p class="card__date ">June 5, 2021</p>
                         </div>
                     </div>
@@ -93,38 +107,29 @@
                         <div class="card__info ">
                             <h5 class="card-title ">Hot Waitress Index</h5>
                             <p class="card-text ">Economic recessions and the ensuing job cuts force many people out of conventional workplaces. Many of ...</p>
-                            <a href="# " class="card-link ">Checkout The Whole Blog</a>
+                            <a href="/Pages/Blogs/HWI.html" class="card-link ">Checkout The Whole Blog</a>
                             <p class="card__date ">May 30, 2021</p>
                         </div>
                     </div>
                 </div>
-                <div class="card ">
-                    <div class="card-body ">
-                        <img class="card-img-top " src="https://gaeejamia.files.wordpress.com/2021/05/intrrnational-tea-day-2-1.png?w=447 " alt=" " srcset=" ">
-                        <div class="card__info ">
-                            <h5 class="card-title ">International Tea Day</h5>
-                            <p class="card-text ">We gave Englishmen the ‘Kohinoor’, and they gave us ‘Tea’. The day is celebrated to bring out the global...</p>
-                            <a href="# " class="card-link ">Checkout The Whole Blog</a>
-                            <p class="card__date ">May 21, 2021</p>
-                        </div>
-                    </div>
-                </div>
+                <h5 class="text-start ms-3 fs-3 fw-bolder mt-3 mb-3" id="finance">Finance</h5>
             </div>
-            <div class="col-lg-5 col__categoryouter ">
-
-                <h4 class="blog__categorytext ">CATEGORIES</h4>
-                <div class="blog__categories ">
-                    <ul>
-                        <li>
-                            <a class="blog__item " href="/ ">Entrepreneurship</a>
-                        </li>
-                        <li>
-                            <a class="blog__item " href="/ ">Economics</a>
-                        </li>
-                        <li>
-                            <a class="blog__item " href="/ ">Finance</a>
-                        </li>
-                    </ul>
+            <div class="col-lg-5  ">
+                <div class="blog__categoryouter">
+                    <!-- <h4 class="blog__categorytext ">CATEGORIES</h4> -->
+                    <div class="blog__categories ">
+                        <ul>
+                            <li>
+                                <a id="ent_blog" class="blog__item " href="#entrepreneurship">Entrepreneurship</a>
+                            </li>
+                            <li>
+                                <a id="eco_blog" class="blog__item " href="#economics">Economics</a>
+                            </li>
+                            <li>
+                                <a id="fin_blog" class="blog__item " href="#finance">Finance</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -197,7 +202,7 @@
     <!-- Copyright -->
     </footer>
     <!-- Footer -->
-
+    <script src="/js/Blog.js"></script>
     <script src="/js/navbar.js "></script>
     <script src="/js/home.js "></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/TypewriterJS/2.17.0/core.min.js " integrity="sha512-o6alMAMTI5qAmVC1UvuRPgTl3UOOkP8NZ6212+rq1Oslsuy8Owt9r5Z0Wu0LNxpw/Q8N8ToGiyovHV+kyOulxg==" crossorigin=" anonymous " referrerpolicy="no-referrer "></script>
