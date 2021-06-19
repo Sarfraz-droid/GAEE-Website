@@ -12,6 +12,7 @@ body {
     filter:saturate(0) opacity(0.5) contrast(0.8) brightness(50%) ;
 }
 
+
 .main__outer {
     margin-top: 1%;
     margin-bottom: 10%;
@@ -130,7 +131,7 @@ body {
     bottom: 10%;
     font-size: 2rem;
     animation: arrowdown infinite 1.5s;
-    color: white;
+    color: #eba144;
 
 }
 
@@ -296,7 +297,11 @@ body {
 }
 
 @media all and (max-width: 991px) {
+    .main__outer{
+        display: block;
+    }
     .home__main {
+        margin-left: 0%;
         text-align: center;
         width: 100%;
     }
@@ -308,7 +313,18 @@ body {
         font-size: 2rem;
     }
     .main__info {
-        font-size: 1rem;
+        font-size: 0.8rem;
+    }
+
+    .flip-card{
+        margin-top: 50%;
+        margin-left: 6%;
+        width: 90%;
+        height: 350px;
+    }
+
+    .card__info{
+        font-size: 0.8rem;
     }
     .info__outer {
         margin-top: 30%;

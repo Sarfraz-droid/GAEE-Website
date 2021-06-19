@@ -3,6 +3,25 @@ body {
     background-image: url('/images/dot-grid.png');
 }
 
+.jmi__bg{
+  top: 0%;
+  left: 0%;
+  position: fixed;
+  width: 100%;
+  z-index: -10;
+  filter:saturate(0) opacity(0.2)
+}
+
+.nav__btn{
+  background-color: transparent;
+}
+
+.ER_1{
+  border-radius: 20px;
+  width: 900px!important;
+  height: 300px!important;
+}
+
 .ER {
     text-align: center;
 }
@@ -17,9 +36,11 @@ body {
 }
 
 .ER__body{
-    font-weight: 300;
+    font-weight: 400;
     margin: 0% 20%;
     font-size: 1.5rem;
+    /* color: #e79530;
+    text-shadow: 1px 1px 0px #2480ba5e; */
 }
 
 .ER__imgtest{
@@ -29,7 +50,7 @@ body {
 }
 
 .flip-card {
-    margin-left: 25%;
+    margin-left: 22%;
     margin-top: 2%;
     background-color: transparent;
     width: 900px;
@@ -78,6 +99,13 @@ body {
     font-weight: 100;
   }
 
+  .PYC{
+    margin-top: 2%;
+    font-weight: 800;
+    font-size: 3rem!important;
+    color: #2481ba;
+    text-shadow: 2px 2px 0px #eba0445e;
+  }
 .footer {
     margin-top: 10%;
 }
@@ -99,5 +127,45 @@ body {
     body {
         max-width: 100%;
         overflow-x: hidden;
+    }
+
+    .ER__logo{
+      width: 80%;
+    }
+
+    .ER__body{
+      margin: 0% 5%;
+      font-size: 0.8rem;
+    }
+    .flip-card{
+      margin-left: 5%;
+      width: 90%;
+      height: 100px;
+      perspective: 0%;
+    }
+
+    .ER_1{
+      width: 100%!important;
+      height: auto!important;
+      border-radius: 5px;
+    }
+
+    .card__info{
+      font-size: 1rem;
+    }
+    .flip-card-back{
+      padding: 5%;
+    }
+    .PYC{
+      margin-top: 5%;
+      font-size: 2rem!important;
+    }
+    .ER_PYC{
+      width: 90%!important;
+      margin: 0% 5%;
+    }
+
+    .jmi__bg{
+      height: 100%;
     }
 }
