@@ -7,6 +7,7 @@ body {
   top: 0%;
   left: 0%;
   position: fixed;
+  bottom: 0%;
   width: 100%;
   z-index: -10;
   filter:saturate(0) opacity(0.2)
@@ -23,7 +24,7 @@ body {
 }
 
 .ER {
-    text-align: center;
+    text-align: center!important;
 }
 
 .ER__logo{
@@ -50,7 +51,7 @@ body {
 }
 
 .flip-card {
-    margin-left: 23.5%;
+  display: inline-block;
     margin-top: 2%;
     background-color: transparent;
     width: 900px;
@@ -130,11 +131,14 @@ body {
     }
 
     .ER__logo{
+      text-align: center;
+      margin-left: 6%;
       width: 80%;
     }
 
     .ER__body{
-      margin: 0% 5%;
+      margin: 1% 2%;
+      margin-left: 6%;
       font-size: 0.8rem;
     }
     .flip-card{
@@ -142,6 +146,12 @@ body {
       width: 90%;
       height: 100px;
       perspective: 0%;
+    }
+    .ER{
+      margin-right: 4%;
+      /* display: flex;
+      flex-direction: column; */
+      text-align: center;
     }
 
     .ER_1{
@@ -154,15 +164,16 @@ body {
       font-size: .91rem;
     }
     .flip-card-back{
-      padding: 5%;
+      padding: 2% 5%;
     }
     .PYC{
       margin-top: 5%;
       font-size: 2rem!important;
     }
     .ER_PYC{
+      display: inline-block;
       width: 90%!important;
-      margin: 0% 5%;
+      margin-left: 5%;
     }
 
     .jmi__bg{
