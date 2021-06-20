@@ -1,6 +1,7 @@
 body {
     font-family: 'Assistant', sans-serif;
     background-image: url('/images/dot-grid.png');
+    overflow-x: hidden;
 }
 
 .jmi__bg{
@@ -10,7 +11,7 @@ body {
   bottom: 0%;
   width: 100%;
   z-index: -10;
-  filter:saturate(0) opacity(0.2)
+  filter:saturate(0) opacity(0.2) blur(5px);
 }
 
 .nav__btn{
@@ -107,6 +108,92 @@ body {
     color: #2481ba;
     text-shadow: 2px 2px 0px #eba0445e;
   }
+  .ER__BestWishesQuote{
+    font-weight: 200!important;
+
+  }
+
+  .ER__BW{
+    background-color: rgba(255, 255, 255, 0.486);
+    box-shadow: 2px 2px 50px 5px rgba(24, 24, 24, 0.349);
+  }
+  .ER__line{
+    margin: 5% 15%;
+
+  }
+
+  .ER__BW div{
+    margin-top: 5px;
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+
+  .ER__syllabus h1{
+    font-size: 3rem;
+    color: #2481ba;
+    text-shadow: 2px 2px 0px #eba04481;
+
+    font-weight: 800;
+  }
+  .ER__syllabus div{
+    margin: 1% 24%;
+  }
+
+  .ER__syllabuscard h2{
+    font-size: 4rem;
+    font-weight: 800;
+    color: #eba044;
+  }
+
+  .ER__syllabuscard h3{
+    font-weight: 800;
+    font-size: 3rem;
+    color: #2481ba;
+    text-shadow: 2px 2px 0px #eba04481;
+
+  }
+
+  .ER__syllabuscard{
+    padding: 5%;
+    box-shadow: 2px 2px 30px 2px rgba(0, 0, 0, 0.178);
+    border-radius: 25px;
+    width: 45%;
+    margin: 2% !important;
+    background-color: whitesmoke;
+  }
+
+  .ER__syllabuscard a{
+    margin-top: 8%;
+    font-size: 1.4rem;
+    font-weight: 800;
+    padding: 6%;
+    border-radius: 50px;
+    background-color: #2481ba;
+    color:white;
+
+    /* background: transparent; */
+    border: none;
+    text-shadow: 2px 2px 0px #eba044;
+    /* box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.315) inset; */
+    transform: scale(1);
+    transition: all 0.2s;
+  }
+
+  .ER__syllabuscard a:hover{
+    background-color: transparent;
+    color: #2481ba;
+    transform: scale(1.3);
+    /* box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.164); */
+    border: none;
+  }
+
+  .ER__syllabuscard a:focus{
+    outline: none;
+    box-shadow: none;
+    color: white;
+  }
+
+
 .footer {
     margin-top: 10%;
 }
@@ -148,7 +235,6 @@ body {
       perspective: 0%;
     }
     .ER{
-      margin-right: 4%;
       /* display: flex;
       flex-direction: column; */
       text-align: center;
@@ -175,8 +261,21 @@ body {
       width: 90%!important;
       margin-left: 5%;
     }
-
     .jmi__bg{
       height: 100%;
+    }
+    .ER__BW{
+      width: 100%;
+    }
+    .ER__syllabusshow{
+      display: block!important;
+      margin: 0%!important;
+    }
+    .ER__syllabuscard{
+      width: 82%;
+      margin: 10%!important;
+    }
+    .ER__BW div{
+      font-weight: 400;
     }
 }
