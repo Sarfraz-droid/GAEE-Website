@@ -193,6 +193,28 @@ body {
     color: white;
   }
 
+  .ER__PR h2{
+    margin-bottom: 4%;
+  }
+  .ER__PRcard{
+    display: block;
+    text-decoration: none;
+    padding: 1% 5%;
+    font-size: 2.5rem;
+    background-color: white;
+    color: #2481ba;
+    font-weight: 800;
+    text-shadow: 2px 2px 0px #eba04460;
+    border-radius: 25px;
+    margin: 2% 35%;
+    box-shadow: 2px 2px 30px 2px rgba(0, 0, 0, 0.178);
+    transform: scale(1);
+    transition: transform 0.2s;
+  }
+  .ER__PRcard:hover{
+    color: #2481ba;
+    transform: scale(1.1);
+  }
 
 .footer {
     margin-top: 10%;
@@ -277,5 +299,8 @@ body {
     }
     .ER__BW div{
       font-weight: 400;
+    }
+    .ER__PRcard{
+      margin: 5%;
     }
 }
