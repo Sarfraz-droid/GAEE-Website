@@ -251,6 +251,16 @@ body {
     padding: 1%;
     padding-left: 4%;
   }
+
+  .ER__link{
+    background-color: transparent!important;
+    font-size: 1rem!important;
+    color: black !important;
+    text-shadow: 1px 1px 0px #eba04462;
+    text-shadow: none!important;
+    padding: 0%!important;
+    display: inline-block!important;
+  }
   .ER_Qtext{
     flex: 0.8;
   }
@@ -274,8 +284,8 @@ body {
     color: black;
     font-size: 1.5rem;
     text-shadow: 1px 1px 0px #eba04462;
-
   }
+
 .footer {
     margin-top: 10%;
 }
